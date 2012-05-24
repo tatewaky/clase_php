@@ -12,7 +12,7 @@ class vista {
 
     public function get_content(){
         $output = $this->header;
-        $output .= 'Jason rules';
+        $output .= exec('whoami');
         $output .= $this->footer;
         return $output;
     }
